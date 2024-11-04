@@ -1,0 +1,6 @@
+@ClothingStore.ApiGateway_HostAddress = https://localhost:7215
+
+POST {{ClothingStore.ApiGateway_HostAddress}}/identity/login
+Accept: application/json
+
+###

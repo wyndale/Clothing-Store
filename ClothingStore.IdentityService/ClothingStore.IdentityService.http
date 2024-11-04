@@ -1,0 +1,32 @@
+@ClothingStore.IdentityService_HostAddress = http://localhost:5158
+
+POST {{ClothingStore.IdentityService_HostAddress}}/api/Authentication/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username":"wendel",
+  "Password":"Wendel@2004"
+}
+###
+
+POST {{ClothingStore.IdentityService_HostAddress}}/api/Authentication/register
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "password": "User@123",
+  "email": "user@example.com"
+}
+
+###
+POST {{ClothingStore.IdentityService_HostAddress}}/api/Authentication/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username":"newuser",
+  "Password":"User@123"
+}
+
